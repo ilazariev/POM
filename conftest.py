@@ -14,7 +14,7 @@ def browser(request):
     print("\nstarting chrome browser for test...")
     options = webdriver.ChromeOptions()
     options.add_experimental_option('prefs', {'intl.accept_languages': language})
-    options.headless = True
+    # options.headless = True
     browser = webdriver.Chrome(options=options)
     yield browser
     print("\nquitting browser...")
